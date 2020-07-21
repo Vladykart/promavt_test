@@ -43,23 +43,6 @@ def internet_connected(host='8.8.8.8', port=53):
             s.close()
 
 
-# Check Internet connection
-def internet_connected(host='8.8.8.8', port=53):
-    global int_err_count
-    while True:
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.settimeout(1.0)
-        try:
-            s.connect((host, port))
-            int_err_count = 0
-            return True
-        except Exception as e:
-            print("Error Internet connect: [Exception] %s: %s" % (type(e).__name__, e))
-            return False
-        finally:
-            s.close()
-
-
 # Publish uptime
 async def send_uptime():
     while True:
