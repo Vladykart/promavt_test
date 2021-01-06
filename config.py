@@ -14,8 +14,8 @@ CONFIG = {
     "DEVICE_PLACE_NAME": "room",
     "DEVICE_ID": "01",
     "DEVICE_ID_USE": "01",
-    "WIFI_AP": "GOaway",
-    "WIFI_PASSWORD": "Markiz1601",
+    "WIFI_AP": "USSID",
+    "WIFI_PASSWORD": "PASSWORD",
     "INT_MAX_ERR": 20,
     "INT_CRIT_ERR": 50,
     "TIME_NOTIFY": 180
